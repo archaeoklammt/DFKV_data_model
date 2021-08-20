@@ -1,6 +1,6 @@
-# No HumanmadeObject - the Application of the linked.art data model on the database "Deutsch-französische Kunstvermittlung"
+# No HumanmadeObject - the Application of the Linked Art Data Model on the database "Deutsch-Französische Kunstvermittlung"
 
-The franco-german project ""Deutsch-französische Kunstvermittlung" was carried out from 2000-2003 and aimed to understand and represent the reciprocal perception of the art production from the view point of art critics. One of its by-products was the collection of tagged and often commented contemporaries articles and book chapters within a three-partite relational database. The database was not openly usable until 2019, than the former research director Thorsten Wübbena published the data via GUI on the website of the DFK Paris.
+The franco-german project ""Deutsch-Französische Kunstvermittlung" was carried out from 2000-2003 and aimed to understand and represent the reciprocal perception of the art production from the view point of art critics. One of its by-products was the collection of tagged and often commented contemporaries articles and book chapters within a three-partite relational database. The database was not openly usable until 2019, than the former research director Thorsten Wübbena published the data via GUI on the website of the DFK Paris.
 
 In 2021 the DFK Paris started a curation activity, that aims to optimize the GUI, enrich the data semantically and to facilitate the use of individual data records for developers. The curation forms part of the research on data reuse in the art history of the DFK Paris.
 
@@ -105,7 +105,7 @@ The prerequisites for applying linked.art on the level of the data record are th
 
 
  
-**JSON-LD Playground https://tinyurl.com/yzn6obsk**
+*JSON-LD Playground https://tinyurl.com/yzn6obsk*
     
 ### source(s)
 
@@ -190,7 +190,7 @@ The prerequisites for applying linked.art on the level of the data record are th
     ]
     }
  
-**JSON-LD Playground : [tinyurl.com/27bew5u9](tinyurl.com/27bew5u9) **
+*JSON-LD Playground : [tinyurl.com/27bew5u9](tinyurl.com/27bew5u9) *
 
 
   * is <code>created_by</code> Person 
@@ -246,7 +246,7 @@ The prerequisites for applying linked.art on the level of the data record are th
     }
     }
 
-**JSON-LD Playground: https://tinyurl.com/562rv3tx**
+*JSON-LD Playground: https://tinyurl.com/562rv3tx*
 
 #### Link to IIIF
 
@@ -296,7 +296,7 @@ The prerequisites for applying linked.art on the level of the data record are th
 	]
 	}
  
-**JSON-LD Playground: https://tinyurl.com/yjt7atw4**
+*JSON-LD Playground: https://tinyurl.com/yjt7atw4*
 
 * **This solution is still under construction, as from the description of linked.art this solution is meant for a manifest, but here it is directed to a canvas.**
 
@@ -342,7 +342,7 @@ A substantial part of all the records carries quotes from the article they refer
       ]
      }
 
-**JSON-LD playground : [https://tinyurl.com/u4wyj95h](https://tinyurl.com/u4wyj95h)**
+*JSON-LD playground : [https://tinyurl.com/u4wyj95h](https://tinyurl.com/u4wyj95h)*
 
 ### Synopsis
 
@@ -384,7 +384,7 @@ Many but not all data records entail an interpretative description of the source
        ]
     }
 
-**JSON-LD playground : [https://tinyurl.com/yh9xuy9w](https://tinyurl.com/yh9xuy9w)**
+*JSON-LD playground : [https://tinyurl.com/yh9xuy9w](https://tinyurl.com/yh9xuy9w)*
 
 ### classification of Textart
 
@@ -445,7 +445,8 @@ Some of the sources have been classified by the researchers as **"Textarten"** d
     ]
     }
 
-**JSON-LD playground : [https://tinyurl.com/vby3edvb](https://tinyurl.com/vby3edvb)**
+	
+*SON-LD playground : [https://tinyurl.com/vby3edvb](https://tinyurl.com/vby3edvb)*
    
  
 ### Keywords
@@ -604,7 +605,7 @@ During the curation activity (2021) each person name that could be identified in
        ]
 	}
 
-**JSON-LD playground : [https://tinyurl.com/yjr8ug4q](https://tinyurl.com/yjr8ug4q)**
+*JSON-LD playground : [https://tinyurl.com/yjr8ug4q](https://tinyurl.com/yjr8ug4q)*
 
 
 #### Person names mentioned
@@ -716,11 +717,11 @@ During the curation activity (2021) each person name that could be identified in
 	  ]  
 	 }
 
-**JSON-LD : [https://tinyurl.com/zhpvv9du](https://tinyurl.com/zhpvv9du)**
+*JSON-LD : [https://tinyurl.com/zhpvv9du](https://tinyurl.com/zhpvv9du)*
 
 ### Activities
 
-Their are two main activities, firstly the creation of the datasets within a relation three-partite database, secondly the curation of the data. The curation consists of two campaigns. The earlier was carried out by Thorsten Wübbena and Moritz Schepp and aimed on presenting the data on the website of the DFK Paris. To arrive there, they formatted the datasets into JSON. The second campaign, lead by me, focussed on the FAIRification of thje data. To this end, some of the entities were semantically enriched and the sources were, wherever possible referenced to digital representations. Furthermore the data records have been mapped to the linked.art Data model. For the sake of usability the activities of the first campaign were not documented in the dataset, as they do alter the meaning and content of the data.
+Their are two main activities, firstly the creation of the datasets within a relation three-partite database, secondly the curation of the data. The curation consists of two campaigns. The earlier was carried out by Thorsten Wübbena and Moritz Schepp and aimed on presenting the data on the website of the DFK Paris. To arrive there, they formatted the datasets into JSON. The second campaign, lead by me, focussed on the FAIRification of thje data. To this end, some of the entities were semantically enriched and the sources were, wherever possible referenced to digital representations. Furthermore the data records have been mapped to the Linked Art Data model. For the sake of usability the activities of the first campaign were not documented in the dataset, as they do alter the meaning and content of the data.
 
 --
 
@@ -798,7 +799,7 @@ Their are two main activities, firstly the creation of the datasets within a rel
     ]
     }
 
-**JSON-LD : [https://tinyurl.com/4uy8dttb](https://tinyurl.com/4uy8dttb)**
+*JSON-LD : [https://tinyurl.com/4uy8dttb](https://tinyurl.com/4uy8dttb)*
 
 ## Summary of model / main parts
 
