@@ -1,0 +1,36 @@
+<svg width="700" height="375">
+<g transform="translate(200,0)">
+<path class="link" d="M0,300 C 150,300 125,100 250,100" style="stroke-width: 1px; stroke: rgb(128, 128, 128); fill: none;"></path>
+
+<path class="link" d="M0,300C85,300 125,225 250,300"  style="stroke-width: 1px; stroke: rgb(128, 128, 128); fill: none;"></path>
+	<g class="node" transform="translate(250,300)">
+    	<circle r="15" style="stroke-width: 0px; stroke: rgb(78, 205, 196); fill: rgb(247, 202, 24);">
+        	</circle>
+    	<text x="20" dy="4" text-anchor="start" style="fill-opacity: 1;">
+        	  	curation
+    				<tspan x="40" y="30">semantic enrichment</tspan>
+   	 				<tspan x="40" y="50">data modelling</tspan>
+  				</text>
+    	</g>
+
+    <g class="node" transform="translate(250,100)">
+    	<circle r="15" style="stroke-width: 0px; stroke: rgb(78, 205, 196); fill: rgb(78, 205, 196);">
+        	</circle>
+        <text x="20" dy="4" text-anchor="start" style="fill-opacity: 1;">
+        	  	creation
+    			<tspan x="40" y="30">bibliographic information</tspan>
+                <tspan x="40" y="60">transcription</tspan>
+   	 			<tspan x="40" y="80">keywords</tspan>
+                <tspan x="60" y="100">topics</tspan>
+                <tspan x="60" y="120">persons</tspan>
+                <tspan x="60" y="140">type of text</tspan>
+  			</text>
+        </g>
+    <g class="node" transform="translate(0,300)">
+    	<circle r="12" style="stroke-width: 0px; stroke: rgb(247, 202, 24); fill: rgb(64, 64, 64);">
+        	</circle>
+		<text x="-21.5" dy="4" text-anchor="end" style="fill-opacity: 1;">digital object
+        	</text>
+        </g>
+    </g>
+</svg>

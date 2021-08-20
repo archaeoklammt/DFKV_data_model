@@ -1,0 +1,80 @@
+<svg width="950" height="550">
+<g transform="translate(250,0)">
+<!-- curved lines from circle to circle-->
+<path class="link" d="M0,300 C 150,300 125,100 250,100" style="stroke-width: 1px; stroke: rgb(128, 128, 128); fill: none;"></path>
+<path class="link" d="M0,300C85,300 125,225 250,300"  style="stroke-width: 1px; stroke: rgb(128, 128, 128); fill: none;"></path>
+<path class="link" d="M0,300C150,300 125,450 150,500" style="stroke-width: 1px; stroke: rgb(128, 128, 128); fill: none;"></path>
+
+<!-- straight lines from text to circle -->
+<path class="link" d="M400,151L480,151" style="stroke-width: 1px; stroke: rgb(128, 128, 128); fill: none;"></path>
+<path class="link" d="M440,191L480,191" style="stroke-width: 1px; stroke: rgb(128, 128, 128); fill: none;"></path>
+<path class="link" d="M400,396L480,396" style="stroke-width: 1px; stroke: rgb(128, 128, 128); fill: none;"></path>
+
+<!-- circles left "first node"-->
+    <g class="node" transform="translate(0,300)">
+    	<circle r="8.5" style="stroke-width: 0px; stroke: rgb(247, 202, 24); fill: rgb(64, 64, 64);">
+        	</circle>
+		<text x="-21.5" dy="4" text-anchor="end" style="fill-opacity: 1;">digital object
+        	</text>
+        </g>
+
+<!-- circles middle "secondary nodes"-->
+	<g class="node" transform="translate(250,300)">
+    	<circle r="10" style="stroke-width: 0px; stroke: rgb(78, 205, 196); fill: rgb(128, 128, 128);">
+        	</circle>
+    	<text x="20" dy="4" text-anchor="start" style="fill-opacity: 1;">
+        	  	interpretation
+    				<tspan x="40" y="35">transcription</tspan>
+   	 				<tspan x="40" y="60">keywords &amp; category</tspan>
+                    <tspan x="60" y="80">topics</tspan>
+                <tspan x="60" y="100">persons</tspan>
+                <tspan x="60" y="120">type of text</tspan>
+  			</text>
+    	</g>
+
+    <g class="node" transform="translate(250,100)">
+    	<circle r="10" style="stroke-width: 0px; stroke: rgb(78, 205, 196); fill: rgb(128, 128, 128);">
+        	</circle>
+        <text x="20" dy="4" text-anchor="start" style="fill-opacity: 1;">
+        	  	bibliographic information of source
+    			<tspan x="40" y="35">title</tspan>
+                <tspan x="40" y="55">author(s)</tspan>
+   	 			      <tspan x="40" y="75">journal</tspan>
+                <tspan x="40" y="95">volume &amp; pages</tspan>
+                <tspan x="40" y="115">(rubrique)</tspan>
+  			</text>
+        </g>
+
+
+	<g class="node" transform="translate(150,500)">
+    	<circle r="6.5" style="stroke-width: 0px; stroke: rgb(78, 205, 196); fill: rgb(247, 202, 24);">
+        	</circle>
+    	<text x="20" dy="4" text-anchor="start" style="fill-opacity: 1;">
+        	  	data modelling
+  				</text>
+    	</g>
+
+<!-- circles right "tertiary nodes"-->
+	<g class="node" transform="translate(480,191)">
+    	<circle r="6.5" style="stroke-width: 0px; stroke: rgb(78, 205, 196); fill: rgb(247, 202, 24);">
+        	</circle>
+    	<text x="20" dy="4" text-anchor="start" style="fill-opacity: 1;">
+        	  	IIIF canvas-link
+  				</text>
+    	</g>
+	<g class="node" transform="translate(480,151)">
+    	<circle r="6.5" style="stroke-width: 0px; stroke: rgb(78, 205, 196); fill: rgb(247, 202, 24);">
+        	</circle>
+    	<text x="20" dy="4" text-anchor="start" style="fill-opacity: 1;">
+        	  	ULAN, Wikidata, ...
+  				</text>
+    	</g>
+    <g class="node" transform="translate(480,396)">
+    	<circle r="6.5" style="stroke-width: 0px; stroke: rgb(78, 205, 196); fill: rgb(247, 202, 24);">
+        	</circle>
+    	<text x="20" dy="4" text-anchor="start" style="fill-opacity: 1;">
+        	  	ULAN, Wikidata, ...
+  				</text>
+    	</g>
+    </g>
+</svg>

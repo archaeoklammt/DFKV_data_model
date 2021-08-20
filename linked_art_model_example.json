@@ -1,0 +1,502 @@
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://dfk-paris.org/example/datarecord/10056",
+  "type": "DigitalObject",
+  "_label": "datarecord ID 10056",
+  "identified_by": [
+    {
+      "type": "Identifier",
+      "_label": "ID database DFKV",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300314626",
+          "type": "Type",
+          "_label": "Identification Number"
+        }
+      ],
+      "content": "ID_10056"
+    }
+  ],
+  "part_of": [
+    {
+      "type": "Digital Object",
+      "_label": "database",
+      "identified_by": [
+        {
+          "type": "Identifier",
+          "_label": "name dataset",
+          "classified_as": [
+            {
+              "id": "https://ulan_nr_for_name",
+              "type": "name",
+              "_label": "name of dataset"
+            }
+          ],
+          "content": "Deutsch-französische Kunstvermittlung 1870-1940, Paris"
+        }
+      ],
+      "part_of": [
+        {
+          "type": "Digital Object",
+          "_label": "database",
+          "identified_by": [
+            {
+              "type": "Identifier",
+              "_label": "name dataset",
+              "classified_as": [
+                {
+                  "id": "https://ulan_nr_for_name",
+                  "type": "name",
+                  "_label": "name of database"
+                }
+              ],
+              "content": "Deutsch-französische Kunstvermittlung 1871-1940 und 1945-1960"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Activity",
+      "_label": "Curation",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/page/aat/300054277",
+          "type": "Type",
+          "_label": "curating",
+          "carried_out_by": [
+            {
+              "type": "Group",
+              "_label": "Curation team"
+            }
+          ],
+          "timespan": {
+            "type": "TimeSpan",
+            "begin_of_the_begin": "2021-04-01",
+            "end_of_the_end": "2021-10-30"
+          }
+        }
+      ],
+      "part": [
+        {
+          "type": "AttributeAssignment",
+          "assigned": {
+            "type": "Identifier",
+            "content": "equivalents"
+          },
+          "assigned_property": "identified_by",
+          "assigned_to": {
+            "id": "http://vocab.getty.edu/page/aat/300417447",
+            "type": "identification numbers and codes",
+            "_label": "References to Getty ULAN, Wikidata etc."
+          }
+        },
+        {
+          "type": "AttributeAssignment",
+          "assigned": {
+            "type": "Identifier",
+            "content": "References to digitized articles"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Creation",
+      "carried_out_by": [
+        {
+          "type": "Person",
+          "_label": "Name of main PI subproject"
+        }
+      ],
+      "timespan": {
+        "type": "TimeSpan",
+        "begin_of_the_begin": "2000-01-01",
+        "end_of_the_end": "2004-01-01"
+      }
+    }
+  ],
+  "refer_to": [
+    {
+      "type": "LinguisticObject",
+      "_label": "source, what the record is about",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300048715",
+          "type": "Type",
+          "_label": "Article"
+        },
+        {
+          "id": "http://vocab.getty.edu/aat/300435443",
+          "type": "Type",
+          "_label": "Type of Work"
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Name",
+          "content": "Schwankungen der Bilderpreise"
+        },
+        {
+          "type": "Identifier",
+          "_label": "ID sources in DFKV",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300314626",
+              "type": "Type",
+              "_label": "Identification Number"
+            }
+          ],
+          "content": "Volume_ID 7861"
+        }
+      ],
+      "part_of": [
+        {
+          "type": "LinguisticObject",
+          "_label": "source of the article",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300048715",
+              "type": "Type",
+              "_label": "Work"
+            }
+          ],
+          "identified_by": [
+            {
+              "type": "Name",
+              "_label": "Kunstchronik"
+            },
+            {
+              "type": "Type",
+              "_label": "intern ID for journal",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300314626",
+                  "type": "Type",
+                  "_label": "Identification Number"
+                }
+              ],
+              "content": "journal_id 1439"
+            }
+          ]
+        }
+      ],
+      "carried_out_by": [
+        {
+          "type": "Person",
+          "_label": "Author",
+          "identified_by": [
+            {
+              "type": "Identifier",
+              "_label": "intern ID for person name",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300314626",
+                  "type": "Type",
+                  "_label": "Identification Number"
+                }
+              ],
+              "content": "239"
+            },
+            {
+              "type": "Name",
+              "_label": "Personen Name",
+              "content": "Frimel, Dr. Th. v."
+            }
+          ],
+          "equivalent": [
+            {
+              "id": "http://vocab.getty.edu/ulan/500115588",
+              "type": "Person",
+              "_label": "Vincent Van Gogh"
+            },
+            {
+              "assigned_by": [
+                {
+                  "type": "AttributeAssignment"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "referred_to_by": [
+        {
+          "type": "LinguisticObject",
+          "_label": "quotation from the article",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/page/aat/300026941",
+              "type": "Type",
+              "_label": "Quotation"
+            }
+          ],
+          "content": "Lorem ipsum"
+        }
+      ],
+      "subject_of": [
+        {
+          "id": "https://digi.ub.uni-heidelberg.de/diglit/iiif/cicerone1926/canvas/0127.json",
+          "type": "DigitalObject",
+          "conforms_to": [
+            {
+              "id": "http://iiif.io/api/presentation",
+              "type": "InformationObject"
+            }
+          ],
+          "format": "application/ld+json;profile=\"http://iiif.io/api/presentation/3/context.json\""
+        }
+      ]
+    }
+  ],
+  "part": [
+    {
+      "type": "LinguisticObject",
+      "_label": "Synopsis by researchers of the article(s)",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/page/aat/30002667",
+          "type": "Type",
+          "_label": "Synopsis",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300418049",
+              "type": "Type",
+              "_label": "Brief Text"
+            }
+          ]
+        }
+      ],
+      "content": "Frimmel berichtet über die niedrigen Bilderpreise z.B. für Courbet und Millet. Die Preisentwicklung für Millets Werke wird ausführlich geschildert, bevor der Autor zwischen Kaufwert und künstlerischem Wert unterscheidet und die Prozesse beschreibt, die für die Preisbildungen alter wie moderner Kunst verantwortlich sind."
+    },
+    {
+      "type": "LinguisticObject",
+      "_label": "Textart",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/page/aat/300435444",
+          "type": "Type",
+          "_label": "classification"
+        }
+      ],
+      "content": "Bericht",
+      "language": [
+        {
+          "id": "http://vocab.getty.edu/page/aat/300389318",
+          "type": "Language",
+          "_label": "Standard German"
+        }
+      ],
+      "identified_by": [
+        {
+          "type": "Identifier",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300314626",
+              "type": "Type",
+              "_label": "Identification Number"
+            }
+          ],
+          "content": "Textart_ID 9836"
+        }
+      ]
+    },
+    {
+      "type": "Identifier",
+      "_label": "Topic_ID",
+      "content": "8701",
+      "equivalent": [
+        {
+          "type": "LinguisticObject",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ],
+              "content": "Kunsthandel: Allgemeines",
+              "language": [
+                {
+                  "id": "http://vocab.getty.edu/page/aat/300389318",
+                  "type": "Language",
+                  "_label": "Standard German"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Identifier",
+      "_label": "Topic_ID",
+      "content": "11284",
+      "equivalent": [
+        {
+          "type": "LinguisticObject",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ],
+              "content": "Zeichnung",
+              "language": [
+                {
+                  "id": "http://vocab.getty.edu/page/aat/300389318",
+                  "type": "Language",
+                  "_label": "Standard German"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinguisticObject",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ],
+              "content": "Drawing",
+              "language": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300388277",
+                  "type": "Language",
+                  "_label": "English"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "LinguisticObject",
+          "classified_as": [
+            {
+              "id": "http://vocab.getty.edu/aat/300435416",
+              "type": "Type",
+              "_label": "Description",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300418049",
+                  "type": "Type",
+                  "_label": "Brief Text"
+                }
+              ],
+              "content": "Dessin",
+              "language": [
+                {
+                  "id": "http://vocab.getty.edu/page/aat/300419444",
+                  "type": "Language",
+                  "_label": "Standard French"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LinguisticObject",
+      "_label": "Keywords - terms",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/page/aat/300311841",
+          "type": "Type",
+          "_label": "keywords"
+        }
+      ],
+      "part": [
+        {
+          "type": "Name",
+          "_label": "Person Name (Family name, given-name",
+          "content": "Millet, Jean-François",
+          "identified_by": [
+            {
+              "type": "Identifier",
+              "_label": "Intern ID for person name",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/aat/300314626",
+                  "type": "Type",
+                  "_label": "Identification Number"
+                }
+              ],
+              "content": "PN_ID 1063"
+            }
+          ],
+          "equivalent": [
+            {
+              "id": "http://vocab.getty.edu/page/ulan/500012529",
+              "type": "Person",
+              "_label": "Millet, Jean Francois (French painter and draftsman, 1814-1875)"
+            },
+            {
+              "id": "https://www.wikidata.org/wiki/Q148458",
+              "type": "Person",
+              "_label": "Jean-François Millet"
+            },
+            {
+              "assigned_by": [
+                {
+                  "type": "AttributeAssignment"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Name",
+          "_label": "Person Name (Family name, given-name",
+          "content": "Courbet, Gustave",
+          "identified_by": [
+            {
+              "type": "Identifier",
+              "_label": "Intern ID for person name",
+              "classified_as": [
+                {
+                  "id": "http://vocab.getty.edu/page/ulan/500010927",
+                  "type": "Type",
+                  "_label": "Identification Number"
+                }
+              ],
+              "content": "PN_ID 1116"
+            }
+          ],
+          "equivalent": [
+            {
+              "id": "http://vocab.getty.edu/page/ulan/500012529",
+              "type": "Person",
+              "_label": "Courbet, Gustave (French painter and designer, 1819-1877)"
+            },
+            {
+              "assigned_by": [
+                {
+                  "type": "AttributeAssignment"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

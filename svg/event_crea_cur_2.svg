@@ -1,0 +1,36 @@
+<svg width="700" height="400">
+<g transform="translate(150,0)">
+<path class="link" d="M0,200 C 150,200 125,100 250,100" style="stroke-width: 1px; stroke: rgb(128, 128, 128); fill: none;"></path>
+
+<path class="link" d="M0,200 C 150,200 125,275 250,300"  style="stroke-width: 1px; stroke: rgb(128, 128, 128); fill: none;"></path>
+
+	<g class="node" transform="translate(250,300)">
+    	<circle r="12.5" style="stroke-width: 0px; stroke: rgb(78, 205, 196); fill: rgb(247, 202, 24);">
+        	</circle>
+    	<text x="22" dy="4" text-anchor="start" style="fill-opacity: 1;">
+    				<tspan x="22" y="4" font-size ="30">curation</tspan>
+                    <tspan x="40" y="35" font-size ="20">semantic enrichment</tspan>
+   	 				<tspan x="40" y="55" font-size ="20">data modelling</tspan>
+  				</text>
+    	</g>
+
+    <g class="node" transform="translate(250,100)">
+    	<circle r="16" style="stroke-width: 0px; stroke: rgb(78, 205, 196); fill: rgb(78, 205, 196);">
+        	</circle>
+        <text x="22" dy="4" text-anchor="start" style="fill-opacity: 1;">
+                <tspan x="22" y="4" font-size ="30">creation</tspan>
+                <tspan x="40" y="35" font-size ="20">bibliographic information</tspan>
+   	 		    <tspan x="40" y="55" font-size ="20">transcription</tspan>
+                <tspan x="40" y="75" font-size ="20">keywords</tspan>
+  			</text>
+        </g>
+    <g class="node" transform="translate(0,200)">
+    	<circle r="16" style="stroke-width: 0px; stroke: rgb(247, 202, 24); fill: rgb(64, 64, 64);">
+        	</circle>
+		<text x="-21.5" dy="4" text-anchor="end" style="fill-opacity: 1;">
+        		<tspan x="-16" y="-8" font-size ="30">digital</tspan>
+                <tspan x="-24" y="30" font-size ="30">object</tspan>
+        	</text>
+        </g>
+    </g>
+</svg>
