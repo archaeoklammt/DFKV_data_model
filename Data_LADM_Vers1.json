@@ -1,0 +1,224 @@
+{"@context": "https://linked.art/ns/v1/linked-art.json",
+"id": "https://dfk-paris.org/example/datarecord/10056",
+"_label": "datarecord ID 10056",
+"identified_by" : [{
+    "type": "Identifier",
+    "_label": "ID database DFKV",
+      "classified_as": [{
+           "id": "http://vocab.getty.edu/aat/300314626",
+           "type": "Type",
+           "_label": "Identification Number"}],
+   "content" : "ID_10056" }],
+   "part_of" : [{
+       "type" : "Digital Object",
+       "_label" : "bibliographic database",
+       "classified_as": [{
+     "id": "http://vocab.getty.edu/page/aat/300044188",
+     "type": "Type",
+     "_label": "bibliographic database"}],
+      "identified_by" : [{"type" : "Name",
+      "content" : "Deutsch-französische Kunstvermittlung 1870-1940, Paris"}],
+      "access_point": [{
+       "id": "https://dfk-paris.org/de/page/deutsch-franzoesische-kunstvermittlung-1870_1940-und-1945_1960-datenbank-2391.html",
+       "type": "DigitalObject"}],
+      "produced_by": {
+         "type": "Production",
+         "timespan": {
+          "type": "TimeSpan",
+          "begin_of_the_begin": "1999-10-01T",
+          "end_of_the_end": "2004-01-20T"},
+     "carried_out_by": [{
+        "type": "Group",
+        "_label": "research subproject: Deutsch-französische Kunstvermittlung 1870-1940, Paris",
+        "formed_by": {
+          "type": "Formation",
+          "influenced_by": [{
+            "type": "Person",
+            "_label": "Thomas W. Gaehtgens"}]}}],
+    "took_place_at": [{
+         "type": "Place",
+         "_label": "DFK Paris"}]},
+    "curated_by": {
+      "type": "data curation",
+      "timespan": {
+          "type": "TimeSpan",
+          "begin_of_the_begin": "2021-03-01T",
+          "end_of_the_end": "2022-05-31T"},
+     "carried_out_by": [{
+            "type": "Group",
+       "_label": "research project: Datenkuration am Beispiel der Datenbank Deutsch-Französische Kunstvermittlung 1870–1940 und 1945–1960",
+       "formed_by": {
+         "type": "Formation",
+      "influenced_by": [{
+          "type": "Person",
+        "_label": "Anne Klammt"}]}}]}}],
+"refer_to" : [{
+   "type" : "LinguisticObject",
+       "_label" : "source, what the record is about",
+       "classified_as": [{
+          "id": "http://vocab.getty.edu/aat/300048715",
+          "type": "Type",
+            "_label": "Article"},{
+            "id": "http://vocab.getty.edu/aat/300435443",
+            "type": "Type",
+            "_label": "Type of Work"}],
+       "identified_by": [{
+           "type": "Name",
+           "content": "Schwankungen der Bilderpreise"}],
+       "created_by": {
+           "type": "Creation",
+        "_label": "Creation of the Article Content",
+       "timespan": {
+        "type": "TimeSpan",
+        "begin_of_the_begin": "1955-10M",
+        "end_of_the_end": "1955-10M"},
+     "carried_out_by": [{
+          "id": "http://vocab.getty.edu/ulan/500115588",
+        "type": "Person",
+          "_label": "Le Corbusier",
+        "identified_by": [{
+             "type" : "Identifier",
+             "_label" : "DFK-ID for person name",
+             "classified_as": [{
+                "id" : "http://vocab.getty.edu/aat/300314626",
+                "type" : "Type",
+                "_label" : "Identification Number"}],
+             "content" : "DFK11647338338"}],
+         "equivalent":[{
+            "id": "http://vocab.getty.edu/page/ulan/500027041"},{
+             "id":"https://www.wikidata.org/wiki/Q4724"},{
+             "type" : "Name",
+             "_label": "alias name",
+             "classified_as": [{
+                "id" : "http://vocab.getty.edu/page/aat/300026963",
+                "type" : "Name",
+                "_label" : "aliases"}],
+             "content" : "Jeanneret, CH. E."}]}]},
+       "referred_to_by" : [{
+          "type": "LinguisticObject",
+         "_label": "quotation from the article",
+         "classified_as": [	{
+             "id": "http://vocab.getty.edu/page/aat/300026941",
+           "type": "Type",
+             "_label": "Quotation"	}],
+            "content" : "mehr eine duftige Gabe von einem Verehrer dem großen Meister..."}],
+      "subject_of": [{
+           "id": "https://digi.ub.uni-heidelberg.de/diglit/iiif/cicerone1926/canvas/0127.json",
+           "type": "DigitalObject",
+           "conforms_to": [{
+             "id": "http://iiif.io/api/presentation",
+            "type": "InformationObject"}],
+          "format": "application/ld+json;profile=\"http://iiif.io/api/presentation/3/context.json\"" }],
+      "member_of" :  [{
+        "type" : "LinguisticObject",
+        "_label" : "source of the text",
+        "classified_as":[{
+          "id": "http://vocab.getty.edu/aat/300048715",
+          "type": "Type",
+            "_label": "Work"}],
+        "identified_by" : [{
+          "type" : "Name",
+            "_label" : "Kunstchronik"},{
+            "type" : "Type",
+            "_label" : "intern ID for journal",
+            "classified_as": [{
+               "id" : "http://vocab.getty.edu/page/aat/300404626",
+               "type" : "Type",
+               "_label" : "Identification Number"}],
+            "content" : "journal_id 1439"},{
+            "type" : "Type",
+            "_label" : "name authority file",
+            "classified_as": [{
+               "id" : "http://vocab.getty.edu/page/aat/300026963",
+               "type" : "Type",
+               "_label" : "name authority file"}],
+            "content" : "https://catalogue.bnf.fr/ark:/12148/cb32804498n"}],
+        "part":[{
+        "type": "LinguisticObject",
+        "_label": "Volume & Pagination",
+            "classified_as": [{
+               "id": "http://vocab.getty.edu/aat/300311699",
+               "type": "Type",
+               "_label": "Chapter"}],
+              "content" : "10.1955.11-12, p. 1407-1420"}]}],
+      "part_of":[{
+        "type" : "LinguisticObject",
+        "_label" : "part of the journal",
+        "classified_as":[{
+          "id": "http://vocab.getty.edu/aat/300048715",
+          "type": "Type",
+            "_label": "Work"}],
+        "identified_by" : [{
+          "type" : "Name",
+            "_label" : "Rubric",
+            "classified_as": [{
+               "id" : "http://vocab.getty.edu/page/aat/300196121",
+               "type" : "Type",
+               "_label" : "Rubric"}],
+          "content" : "Lettres"}]}]}],
+    "referred_to_by" : [{
+   "type": "LinguisticObject",
+       "_label": "Synopsis by researchers of the article(s)",
+       "classified_as": [{
+       "id": "http://vocab.getty.edu/aat/300026675",
+       "type": "Type",
+       "_label": "Synopsis",
+       "classified_as": [{
+        "id": "http://vocab.getty.edu/aat/300418049",
+          "type": "Type",
+          "_label": "Brief Text"}],
+        "language": [{
+             "id": "http://vocab.getty.edu/page/aat/300388306",
+             "type": "Language",
+             "_label": "French"}],
+        "content":	"Le mouvement pur ne pouvait être représenté..."}]},{
+        "type": "LinguisticObject",
+      "_label": "Textart",
+      "classified_as": [{
+        "id": "http://vocab.getty.edu/page/aat/300435444",
+        "type": "Type",
+        "_label": "classification"}],
+       "content" : "Bericht",
+       "language": [{
+         "id": "http://vocab.getty.edu/page/aat/300389318",
+         "type": "Language",
+         "_label": "Standard German"}]},{
+     "type": "LinguisticObject",
+   "_label": "Topics",
+   "classified_as": [{
+     "id": "http://vocab.getty.edu/aat/300311841",
+     "type": "Linguistic Object",
+     "_label": "topic"}],
+     "content" : "Zeichnung",
+     "language": [{
+         "id": "http://vocab.getty.edu/page/aat/300389318",
+         "type": "Language",
+       "_label": "Standard German"}],
+     "equivalent": [{
+         "id": "http://vocab.getty.edu/aat/300311841",
+       "type": "Linguistic Object",
+         "_label": "topic",
+        "content" : "Dessin",
+        "language": [{
+        "id": "http://vocab.getty.edu/page/aat/300388306",
+        "type": "Language",
+          "_label": "French (language)"}]}]}],
+    "refers_to" : [{
+     "type": "LinguisticObject",
+  "_label": "persons mentioned",
+  "classified_as": [{
+       "id": "http://vocab.getty.edu/page/aat/300404668",
+     "type": "Type",
+       "_label": "indexing information" }],
+  "part" : [{
+     "type" : "Name",
+     "_label" : "Person Name (Family name, given-name",
+     "content" : "Millet, Jean-François",
+     "equivalent": [{
+        "id": "http://vocab.getty.edu/page/ulan/500012529"},{
+          "id" : "https://www.wikidata.org/wiki/Q148458"}]},{
+     "type" : "Name",
+     "_label" : "Person Name (Family name, given-name",
+     "content" : "Courbet, Gustave",
+     "equivalent":[{
+         "id": "http://vocab.getty.edu/page/ulan/500012529"}]}]}]}
