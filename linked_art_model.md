@@ -1,4 +1,4 @@
-# Not a HumanmadeObject - the Application of the Linked Art Data Model on the databases "Deutsch-Französische Kunstvermittlung"
+# Is it working? The Application of the Linked Art Data Model on the databases "Deutsch-Französische Kunstvermittlung"
 
 Author: Anne Klammt
 
