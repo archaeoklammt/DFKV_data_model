@@ -19,7 +19,7 @@ The Linked Art Data Model (LADM) is a proposal to make data from cultural herita
 
 As LIDOX XML serves as an intelligent solution for the interoperability of specialized collection data and central nodes such as Europeana, it offers a combination of rigor in terms of data structure and certain information defined as mandatory, as well as flexibility within its main sections. The LADM aims at reusability of the data in new applications and therefore allows individual structure of the data, but focuses on a common grammar and label set. The "grammar" is CIDOC-CRM, and the label set is mostly Getty AAT. These features of LADM serve to support the main goal of data curation at DFK Paris, which is to reuse legacy data without stripping them of their original research context. 
 
-Nevertheless, the application of LADM to databases is not without problems, and it is even unclear whether it is applicable at all from a theoretical point of view, since it is intended for collection data. At the heart of the LADM approach is a (usually) digitized collection object such as a digital surrogate of a coin, painting, or whatever artifact. In the case of DFK Paris databases, we instead focus on an digital information object. Like a poem, however, a database is an expression that is represented textually. So like the subject of a painting, the object is intangible, and what we host on our server is a representation. So even if it is possible from a technical point of view, it is questionable whether the application of LADM is appropriate.
+Nevertheless, the application of LADM to databases is not without problems, and it is even unclear whether it is applicable at all from a theoretical point of view, since it is intended for collection data. At the heart of the LADM approach is a (usually) digitized collection object such as a digital surrogate of a coin, painting, or whatever artefact. In the case of DFK Paris databases, we instead focus on an digital information object. Like a poem, however, a database is an expression that is represented textually. So like the subject of a painting, the object is intangible, and what we host on our server is a representation. So even if it is possible from a technical point of view, it is questionable whether the application of LADM is appropriate.
 
 ## Subject and structure of the document
 
@@ -31,7 +31,7 @@ The text is introduced by a description of the meaning of the term "record" in t
 
 ### definition of "data record" in the project
 
-A data record in the databases of the "Deutsch-französische Kunstvermittlung"-projects represents a digital information object, that collects structured and semi-structured data. A data record consists firstly of the reference to one or more sources with bibliographic informations (always) and a quotation (often) and secondly of keywords (mostly), a description (often) and the categorization of the source-type (sometimes). Thirdly rights statements and activities are documenting the creation, curation and terms of usage of the data record. There is no entity like a person, a book or a date that forms the spine of the record, but a record represents the information, that a researcher collected and tagged one or more written sources, s/he evaluated as relevant for the project (s. for more information [link to project at website DFK](https://dfk-paris.org/de/page/deutsch-franz%C3%B6sische-kunstvermittlung-1871%E2%80%931940-und-1945%E2%80%931960-2389.html)). Each data record was part of one of the three former databases, which were technically aligned as early 2004 to one database that consists of 60$$ data records.
+A data record in the databases of the "Deutsch-französische Kunstvermittlung"-projects represents a digital information object, that collects structured and semi-structured data. A data record consists firstly of the reference to one or more sources with bibliographic informations (always) and a quotation (often) and secondly of keywords (mostly), a description (often) and the categorization of the source-type (sometimes). Thirdly rights statements and activities are documenting the creation, curation and terms of usage of the data record. There is no entity like a person, a book or a date that forms the spine of the record, but a record represents the information, that a researcher collected and tagged one or more written sources, s/he evaluated as relevant for the project (s. for more information [link to project at website DFK](https://dfk-paris.org/de/page/deutsch-franz%C3%B6sische-kunstvermittlung-1871%E2%80%931940-und-1945%E2%80%931960-2389.html)). Each data record was part of one of the three former databases, which were technically aligned as early 2004 to one database that consists of approximately 6000 data records.
      
 ### Prerequisites for applying linked.art , context of the data set and identifier
 
@@ -52,11 +52,15 @@ Although the URI carries the ID of the record in the database, we want to state 
           		 "_label": "Identification Number"}],  
      	 "content" : "ID_10056" }]}
  
-### The data record as part of a database and incremental events 
+### The dataset as part of a database and the events acting on it 
 
-The data record is <code>part_of</code> a database that was <code>produced_by</code> a group of researchers, under the lead of Thomas W. Gaehtgens. Further attributes allow to add information on the time span of the production and even the place. The latter one is in the cases of the three databases a helpful further information for contextualize the object.
-To express this we can apply the role of workshops, that the LADM offers, as workshop designates a group of artists, that produced an object, without that each member is actively involved. Whether a group is directly led by one person or loosely inspired, is of no further concern for the modelling.   
-At the same way we are expressing the data curation as activity with <code>curated_by</code> an other group under the lead of Anne Klammt.
+The dataset is<code>part_of</code> a database <code>produced_by</code> a group of researchers led by Thomas W. Gaehtgens. Additional attributes make it possible to add information about the time period of production and even the location. In the case of the three databases, the latter is helpful additional information for contextualizing the object.
+
+To express this, we can apply the role of workshops provided by LADM, because workshop refers to a group of artists who produced an object without each member being actively involved. Whether a group is directly led by one person or loosely inspired no longer matters for modeling purposes.   
+Similarly, we refer to data curation as an activity<code>curated_by</code>another group.
+
+Neither does "curation" exist as an activity in LADM, nor is there the property "curated by". We newly introduce these two terms here because they are of central importance to us. LADM is not ignorant of the role of curators, so already the assignment of objects (dating, style, authorship) can be recorded as their activity, and also their role in assembling collections of objects can be expressed. Accordingly, our proposal can be seen as a further simplification.
+
 --
 
 	{"@context": "https://linked.art/ns/v1/linked-art.json", 
@@ -112,9 +116,9 @@ The activities of the data curation in 2021 to 2022 focussed on the semantic enr
 
 #### data entries referring to articles in journals
 
-The LADM proposes a rather easy way to refer to articles, that does however not address explicitly the title of the journal and the volume (it has to be emphasized, that expressing bibliographic information is not in the scope of the LADM). Still for our purposes this is an disadvantage as the articles, in lack of an individual identifier like a DOI, can't be identified alone from their title. Therefore we understand an article as an application of "<code>member_of</code>" as it is a member of a journal - like a painting may be a member of a collection. An alternative would be to term the article as <code>part</code>. We used part to apply it for the information in which rubrique the article was published, if this information was given.
+The LADM proposes a quite easy way to refer to articles, but it does not explicitly address the title of the journal and the volume (it must be emphasized, that providing bibliographic information is not part of the scope of the LADM). For our purposes, however, this is an disadvantage as the articles, in lack of an individual identifier like a DOI, can't be identified by their title alone. Therefore we understand an article to be an application of "<code>member_of</code>" as it is a member of a journal - like a painting may be a member of a collection. An alternative would be to term the article as <code>part</code>. We used "part" for the information in which rubric the article was published.
 
-We chose "part" for adding the information on the volume and the pagination. This surely is a less favourable solution, but in the databases "deutsch-französische Kunstvermittlung" both information were formerly modelled as one string. A split of them was envisaged, but as the information is not sufficiently normalized, we stepped away from this.
+We again chose "part" for the indication of the volume and the pagination. This surely is a less favourable solution, but in the databases "deutsch-französische Kunstvermittlung" both information used to be modelled as one string. A split of them was envisaged, but since the information is not sufficiently normalized, we dropped it.
 
 ---
 
@@ -214,7 +218,7 @@ We chose "part" for adding the information on the volume and the pagination. Thi
  
 ### Data entries referring to books
 
-Things are less complex for books as the LADM offers the presentation of the key information in a way, that is coherent to the structure in the databases at stake. As a chapter is essentially a <code>part</code> of the book, we can express the text with its title as a part of the the book.
+Things are less complex for books as the LADM offers the presentation of the key information in a way, that is coherent to the structure in the databases at stake. As in the LADM a chapter is essentially a <code>part</code> of the book, we also can refer to the text as a part.
 
 ---
 
@@ -302,7 +306,7 @@ Things are less complex for books as the LADM offers the presentation of the key
 
 ### Link to IIIF
 
-The data curation in 2021 resulted in the establishing of §§§ links to digital surrogates of the articles cited in the database. The LADM integrated IIIF in two ways. The first one focusses on the digital surrogate itself alas the IIIF-image. The second one addresses the IIIF-manifest as a collection of objects, that together form the digital surrogate. The later one fits to our database, as our interest lies on the digital surrogate of the entire article and not so much about the individual scans and there is no interest in different access points, but on the contrary the objective is to offer the link to the manifest. Therefore the way to link them into our model is by stating, that a IIIF-manifest has the article at stake <code>as subject</code>. 
+Data curation in 2021 resulted in the establishment of links to digital surrogates of articles cited in the database. The LADM integrates IIIF in two ways. The first focuses on the digital surrogate itself, i.e., the IIIF-image. The second deals with the IIIF-manifest as a collection of digital objects that together form the digital surrogate. The latter fits our database because our interest is in the digital surrogate of the entire article rather than the individual scans. Moreover, there is no interest in different access points; our only objectivel is to provide the link to the manifest. Therefore, the way to include it in our model is to state that an IIIF-manifest is <code>subject</code> of the article in question. 
 
 ---
 
@@ -371,9 +375,10 @@ The Linked Art Data Model proposes the assignment of an authorship for abstracts
          	"content":	"Le mouvement pur ne pouvait être représenté, d'une façon gratuite, que par l'art abstrait. (...) Les travaux du Bauhaus comptent parmi les plus intéressantes manifestations de notre époque, d'abord par la qualité des hommes qui y ont travaillé : à côté de Walter Gropius et de Lyonel Feininger, nous retrouvons de grands artistes abstraits, Klee, Kandinsky, Moholy-Nagy ; puis par les idées qui s'y sont développées. Dans l'ordre de l'objet pratique, – le Bauhaus était une sorte d'école-atelier d'art appliqué – une rigoureuse et harmonieuse fonctionnalité. Dans l'ordre esthétique, une volonté de revenir à des formes pures, essentielles, et volontiers abstraites. 26 Kurt Schwitters, qui y exposait sa théorie de Merz : par ces titres, déjà, on voit que les courants les plus importants de l'abstraction nourrissaient les idéaux et les réalisations du Bauhaus. Et comme le Bauhaus possédait une scène d'expérience pour ses recherches dans l'ordre du théâtre et de la chorégraphie, il s'y est créé tout naturellement une forme de ballet abstrait, extrêmement remarquable."}]} ]}
 
 
-### classification of Textart
+### Text type classification
 
-Some of the sources have been classified by the researchers as **"Textarten"** due to the (functional) character of the text as obituary or announcement. The types of the category were partly only shared within the team, partly they were used in more than one team. The definition of the types are not stated and do neither related to thesauri nor to bibliographic informations of the sources. Each of the types is identified by a unique identifier (in relation to the class). Some of the types possess a Label in French and German, others only offer German.
+Some of the sources were classified by the researchers as "text types" based on the (functional) nature of the text, such as obituaries or announcements. Some of the text types in this category were used only by one research team, and some were used by several of the teams. The definition of the types is not given and does not refer to thesauri or to bibliographic information of the sources. Some of the types have a label in French and German, others offer only German.
+
 
 --
 
@@ -388,7 +393,7 @@ Some of the sources have been classified by the researchers as **"Textarten"** d
     	   "id": "http://vocab.getty.edu/page/aat/300435444", 
     	   "type": "Type", 
     	   "_label": "classification"}],
-        "content" : "Bericht",
+        "content" : "Nachruf",
       	"language": [{
           	"id": "http://vocab.getty.edu/page/aat/300389318", 
           	"type": "Language", 
@@ -397,7 +402,7 @@ Some of the sources have been classified by the researchers as **"Textarten"** d
 
 ### Keywords
 
-Most of the data records are carrying keywords, which were created by the researchers to designate the main topics of the texts they collected. The establishing of the thesauri took them a lot of efforts and had been discussed and modified throughout the projects' duration. The keywords were profoundly altered by the migration of the data in 2004. Therefore this keywords are termed as "topics" now. Some of the keywords have a label in French and one in German. Like stated for the synopsis we refer the topics to the data entry and not the text(s).  
+Most of the data records are tagged with keywords created by the researchers to designate the main topics of the texts they collected. The creation of the thesauri took them a lot of effort and was discussed and changed throughout the projects without ever achieving satisfactory results. The keywords were profoundly altered by the migration of the data in 2004. Therefore, these keywords are referred to as "topics" now. Some of the keywords have a label in French and in German. Like stated for the synopsis we align the topics to the data entry and not to the text(s).  
 
 ---
 
@@ -430,9 +435,9 @@ Most of the data records are carrying keywords, which were created by the resear
 
 ### Persons mentioned by the texts
 
-One of the important features of the databases are the indexing of persons mentioned in texts. Almost each data entry entails a list of persons. There is no further designation of their role and as that a person may figure as main subject of the article (par example in an obituary) or as someone who serves as point of reference for the art critics writing the article. 
+One of the most important features of the databases is the indexing of people mentioned in the texts. Almost every data entry contains a list of persons. There is no further designation of their role, and so a person may appear as the main character of the article (for example, in an obituary) or as someone who serves as a reference point for the art critics writing the article. 
  
-During the curation activity (2021-2022) the persons were wherever possible referenced to name authority files (Getty ULAN, GND, VIAF.org) or of entries in Wikidata. As result of the former working conditions and competences of the researchers their are approximately 550 persons, that exist at least with two slightly different name variants in the data. All variants were kept as "equivalents", as they reflect also the spelling in the sources. 
+During the curation activity (2021-2022), individuals were referred to authority files (Getty ULAN, GND, VIAF.org) or to entries in Wikidata wherever possible. As a result of the technical capabilities and skills of the researchers at the time, there are approximately 550 individuals who appear in the data with at least two slightly different name variants. All of these variants have been kept as "equivalents" because they often reflect the spelling in the sources, i.e. they have evidential value. 
 
 --
 
@@ -468,10 +473,10 @@ The montage of all the parts is stored as separate File and can be also visualiz
 
 ### Summary
 
-The LADM allows to describe the main feature of the data records in a sufficient way. Nevertheless we had to enlarge the model by the activity <code>Curation</code> and subsequently <code>curated_by</code>. The modelling of articles as <code>member_of</code> a journal is a work around, that is not entirely convincing. And finally we would have preferred to bring into the the lists of indexed persons as well as the keywords in a way that is comparable to the description of visual items in the LADM, as they allow to state, that something or someone is a <code>subject_of</code> an item. Regardless these shortcomings the application of the LADM shows from our perspective great potentials for fostering the interoperability of legacy data in art history. It is easy enough to be carried out by researchers with only a basic understanding of Linked Open Data and enables them to transport their data into a Format and shape that is adaptable by developer. This is a much more far reaching approach to the re-usabilty as just turning data into the JSON-Format as the intention is that the developer does not work on this data on demand of researcher, working on the data, but on their own. So they should be enabled to understand the data without any further reading of the documentation.
+The LADM allows to describe the main characteristics in the datasets in a sufficient way. Nevertheless, we needed to extend the model to include the activity <code>curation</code> and then <code>curated_by</code>. Further, modelling articles as members of a journal is as a workaround not entirely convincing. Finally, we would have preferred to include lists of indexed people and keywords in a way that is comparable to the description of <code>visual items</code> in LADM: they enable to indicate that what they show is <code>about</code> something. This concept is coherent to the use of keywords in the databases, we deal with. It also would align well with the indexed persons as their relation to the context of the text shows as stated earlier some variation. But for obituaries or biographical notes an derivate of the concept of <code>representation</code> might also fit. Again these concepts are for the moment only meant for visual items. 
 
-The LADM allowed us to describe the main characteristics of the datasets in a sufficient way. Nevertheless, we needed to extend the model to include the activity <code>curation</code> and then <code>curated_by</code>. Further, modeling articles as members of a journal is a workaround that is not entirely convincing. Finally, we would have preferred to include lists of indexed people and keywords in a way that is comparable to the description of <code>visual items</code> in LADM: they allow us to indicate that something or someone is the <code>subject of</code> an object. Notwithstanding these shortcomings, we believe the use of LADM shows great potential for promoting interoperability of legacy data in art history. 
+Notwithstanding these shortcomings, the use of LADM shows great potential for advancing interoperability of legacy data in art history. 
 
-It is so simple that it can be done by researchers with only a basic understanding of LOD, and allows them to put their data into a format and form that is adapted to the needs of developers. This is a much more far-reaching approach to reusability than simply converting data to JSON format. The intent is that the developer will not be processing this data on behalf of the researcher looking at the data, but will be doing so themselves and for their own interests. Using the LADM enables the user to understand the data without having to read documentation that too often focuses on content issues.
+It is from our own experience simple enough to be applied by researchers with only a basic understanding of LOD, and allows them to put their data into a format and form that is adapted to the needs of developers. This is a much more far-reaching approach to reusability than simply converting data to JSON format. The intent is that the developer will not be processing this data on behalf of the researcher looking at the data, but will be doing so themselves and for their own interests. Using the LADM enables the user to understand the data without having to read documentation that too often focuses on content issues.
 
 
