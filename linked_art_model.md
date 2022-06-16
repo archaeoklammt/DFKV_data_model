@@ -38,7 +38,6 @@ A data record in the databases of the "Deutsch-französische Kunstvermittlung"-p
 The prerequisites for applying the LADLM on the level of the data record are that each data record has an URI and all the properties and classes used have to be referred to linked.art. Finally the type of the entire entity - the data record - has to be declared and its context indicated.
 Although the URI carries the ID of the record in the database, we want to state separately the ID als information for the identification of the data record.
 
---
 
 		{"@context": "https://linked.art/ns/v1/linked-art.json", 
 		"id": "https://dfk-paris.org/example/datarecord/10056", 
@@ -61,7 +60,6 @@ Similarly, we refer to data curation as an activity<code>curated_by</code>anothe
 
 Neither does "curation" exist as an activity in LADM, nor is there the property "curated by". We newly introduce these two terms here because they are of central importance to us. LADM is not ignorant of the role of curators, so already the assignment of objects (dating, style, authorship) can be recorded as their activity, and also their role in assembling collections of objects can be expressed. Accordingly, our proposal can be seen as a further simplification.
 
---
 
 	{"@context": "https://linked.art/ns/v1/linked-art.json", 
 	 "part_of" : [{
@@ -120,7 +118,6 @@ The LADM proposes a quite easy way to refer to articles, but it does not explici
 
 We again chose "part" for the indication of the volume and the pagination. This surely is a less favourable solution, but in the databases "deutsch-französische Kunstvermittlung" both information used to be modelled as one string. A split of them was envisaged, but since the information is not sufficiently normalized, we dropped it.
 
----
 
 		{"@context": "https://linked.art/ns/v1/linked-art.json",
 		"id": "https://dfk-paris.org/example/datarecord/10056",
@@ -220,7 +217,6 @@ We again chose "part" for the indication of the volume and the pagination. This 
 
 Things are less complex for books as the LADM offers the presentation of the key information in a way, that is coherent to the structure in the databases at stake. As in the LADM a chapter is essentially a <code>part</code> of the book, we also can refer to the text as a part.
 
----
 
 	{"@context": "https://linked.art/ns/v1/linked-art.json",
 		"id": "https://dfk-paris.org/example/datarecord/10056",
@@ -308,7 +304,6 @@ Things are less complex for books as the LADM offers the presentation of the key
 
 Data curation in 2021 resulted in the establishment of links to digital surrogates of articles cited in the database. The LADM integrates IIIF in two ways. The first focuses on the digital surrogate itself, i.e., the IIIF-image. The second deals with the IIIF-manifest as a collection of digital objects that together form the digital surrogate. The latter fits our database because our interest is in the digital surrogate of the entire article rather than the individual scans. Moreover, there is no interest in different access points; our only objectivel is to provide the link to the manifest. Therefore, the way to include it in our model is to state that an IIIF-manifest is <code>subject</code> of the article in question. 
 
----
 
 	{ "@context": "https://linked.art/ns/v1/linked-art.json", 
 	"id": "https://dfk-paris.org/example/datarecord/10056", 
@@ -351,7 +346,6 @@ Many but not all data records entail an interpretative description of the source
 
 The Linked Art Data Model proposes the assignment of an authorship for abstracts. This is an appealing possibility, that would go very well with especially the databases of the "Deutsch-französische Kunstvermittlung", but for deflating the model, the mapping does not make use of it. 
 
----
 
 	{ "@context": "https://linked.art/ns/v1/linked-art.json", 
 	"id": "https://dfk-paris.org/example/datarecord/10056", 
@@ -380,8 +374,6 @@ The Linked Art Data Model proposes the assignment of an authorship for abstracts
 Some of the sources were classified by the researchers as "text types" based on the (functional) nature of the text, such as obituaries or announcements. Some of the text types in this category were used only by one research team, and some were used by several of the teams. The definition of the types is not given and does not refer to thesauri or to bibliographic information of the sources. Some of the types have a label in French and German, others offer only German.
 
 
---
-
 	{"@context": "https://linked.art/ns/v1/linked-art.json", 
 	  "id": "https://dfk-paris.org/example/datarecord/10056", 
 	  "type": "DigitalObject", 
@@ -404,7 +396,6 @@ Some of the sources were classified by the researchers as "text types" based on 
 
 Most of the data records are tagged with keywords created by the researchers to designate the main topics of the texts they collected. The creation of the thesauri took them a lot of effort and was discussed and changed throughout the projects without ever achieving satisfactory results. The keywords were profoundly altered by the migration of the data in 2004. Therefore, these keywords are referred to as "topics" now. Some of the keywords have a label in French and in German. Like stated for the synopsis we align the topics to the data entry and not to the text(s).  
 
----
 
 	{"@context": "https://linked.art/ns/v1/linked-art.json", 
 	  "id": "https://dfk-paris.org/example/datarecord/10056", 
@@ -439,7 +430,6 @@ One of the most important features of the databases is the indexing of people me
  
 During the curation activity (2021-2022), individuals were referred to authority files (Getty ULAN, GND, VIAF.org) or to entries in Wikidata wherever possible. As a result of the technical capabilities and skills of the researchers at the time, there are approximately 550 individuals who appear in the data with at least two slightly different name variants. All of these variants have been kept as "equivalents" because they often reflect the spelling in the sources, i.e. they have evidential value. 
 
---
 
 	{ "@context": "https://linked.art/ns/v1/linked-art.json", 
 	"id": "https://dfk-paris.org/example/datarecord/10056", 
