@@ -458,7 +458,7 @@ During the curation activity (2021-2022), individuals were referred to authority
 
 ### Entire model
 
-The montage of all the parts is stored as separate File and can be also visualized at the JSON-LD playground [Link: https://tinyurl.com/26mwdddr](https://tinyurl.com/26mwdddr).
+The montage of all the parts is stored as separate file and can be also visualized at the JSON-LD playground.
 
 
 ### Summary
